@@ -77,9 +77,9 @@ If you'd like to contribute, fork the repo and submit a pull request.
 
 ## 📬 Contact
 
-**Developer**: Mas'ab (Muhammad S. Salaax)  
-📧 Email: _[Your Email Here]_  
-💻 GitHub: [Your GitHub Username]
+**Developer**: mohamed said salah  
+📧 Email: mohamedsaidsalah74@gmail.com  
+💻 GitHub: mohamedsaiddiv
 
 ---
 
