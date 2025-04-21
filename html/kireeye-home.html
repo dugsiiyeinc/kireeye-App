@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kireeye - Home</title>
+</head>
+<body>
+    <section class="home container">
+        <h1>Welcome To Kireeye </h1>
+        <nav>
+            <ul>
+                <li id="popular-link" class="active" data-category="popular">Popular</li>
+                <li id="houses-link" data-category="houses">Houses</li>
+                <li id="cars-link" data-category="cars">Cars</li>
+            </ul>
+        </nav>
+
+        <section id="popular" class="category">
+            <h2>Popular Rental Properties</h2>
+            <div class="listings" id="popular-houses-list"></div>
+            <div class="listings" id="popular-cars-list"></div>
+            <div class="listings" id="popular-stadiums-list"></div>
+        </section>
+
+        <section id="houses" class="category" style="display: none;">
+            <div class="filtering">
+                <div class="filter-type">
+                    <label for="house-type-filter">Choose House Type:</label>
+                    <select id="house-type-filter">
+                        <option value="all">All</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="Bungalow">Bungalow</option>
+                    </select>
+                </div>
+                <div class="filter-price">
+                    <label for="house-price-filter">Choose House Price:</label>
+                    <select id="house-price-filter">
+                        <option value="all">All</option>
+                        <option value="100">$100</option>
+                        <option value="200">$200</option>
+                        <option value="300">$300</option>
+                    </select>
+                </div>
+            </div>
+            <h2>Houses for Rent</h2>
+            <div class="listings" id="houses-list"></div>
+        </section>
+
+        <section id="cars" class="category" style="display: none;">
+            <div class="filtering">
+                <div class="filter-type">
+                    <label for="car-type-filter">Choose Car Type:</label>
+                    <select id="car-type-filter">
+                        <option value="all">All</option>
+                        <option value="Luxury">Luxury</option>
+                        <option value="tranportion">Transport</option>
+                        <option value="taxi">Taxi</option>
+                    </select>
+                </div>
+                <div class="filter-price">
+                    <label for="car-price-filter">Choose Car Price:</label>
+                    <select id="car-price-filter">
+                        <option value="all">All</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                        <option value="150">$150</option>
+                    </select>
+                </div>
+            </div>
+            <h2>Cars for Rent</h2>
+            <div class="listings" id="cars-list"></div>
+        </section>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Company Section -->
+          <div>
+            <h3 class="text-lg">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Support Section -->
+          <div>
+            <h3 class="text-lg">Support</h3>
+            <ul class="space-y-2">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal Section -->
+          <div>
+            <h3 class="text-lg">Legal</h3>
+            <ul class="space-y-2">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+
+          <!-- Connect with Us Section -->
+     
+            <h3 class="text-lg">Connect with Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2023 MovieApp. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  
+</body>
+</html>
