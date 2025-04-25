@@ -1,0 +1,98 @@
+#rental-deals{
+    background-color: #f4f7ff;
+    padding: 20px 0 ;
+}
+
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .Property-title{
+    font-size: 2rem;
+    color: #6c63ff;
+    text-align: left;
+
+  }
+  .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 300px;
+    flex: 1 1 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  .features li {
+    flex: 1 1 45%; 
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .features i {
+    margin-right: 8px;
+    color: #555;
+  }
+  
+  
+  .features li {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .features i {
+    color: #666;
+    margin-right: 8px;
+  }
+  
+  .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .price a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  .price a:hover{
+    color: #6c63ff;
+  }
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
