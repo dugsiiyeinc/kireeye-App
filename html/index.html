@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kireeye App</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/testimonial.css">
+    <link rel="stylesheet" href="/css/kireeye-home.css">
+    <link rel="stylesheet" href="/css/rental-deal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -20,17 +26,191 @@
             </a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#test">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#deals">Rental Deals</a></li>
-                    <li><a href="#client">Testimonials</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#rental-deals">Rental Deals</a></li>
+                    <li><a href="#kireeye-testimonials">Testimonials</a></li>
                 </ul>
             </div>
             <div class="nav-btns">
-                <button class="btn">Sign In</button>
+              <a href="/html/auth.html" class="btn">sign In</a>
             </div>
         </nav>
     </header>
+    <section id="hero">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Find Your Perfect Property</h1>
+            <p>Search from a wide range of houses, cars, and event spaces across Somalia</p>
+            <form class="search-form">
+                  <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="house">House</option>
+                <option value="car">Car</option>
+                <option value="stadium">Stadium</option>
+              </select>
+              <input type="text" placeholder="Search by city, type, or keyword..." id="searchInput" />
+          
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="about-section">
+        <div class="about-container  container">
+          <div class="about-img">
+            <img src="/images/about.png" alt="Rent Car and House">
+          </div>
+          <div class="about-text">
+            <h2>WE ARE EXPERTS IN RENTING CARS & HOUSES</h2>
+            <p>
+              At Kireeye, we connect you with the best car and house rental options in your area. Our platform makes renting simple, fast, and secure.
+            </p>
+            <a href="#" class="btn-blue">LEARN MORE</a>
+          </div>
+        </div>
+      </section>
+  
+      <section id="rental-deals">
+      <div class="Property-info  container ">
+        <div class="cars">
+          <h1 class="Property-title">cars</h1>
+          <div class="card-container">
+        
+            <div class="card">
+              <img src="/images/car4.png" alt="Tesla Model S">
+              <h3>Tesla Model S</h3>
+              <ul class="features">
+                <li><i class="fas fa-user-friends"></i> 4 People</li>
+                <li><i class="fas fa-car-side"></i> Steering</li>
+                <li><i class="fas fa-road"></i> 400km</li>
+                <li><i class="fas fa-bolt"></i> Electric</li>
+              </ul>
+              <div class="price">
+                <p>180$ <span>/per day</span></p>
+                <a href="/html/auth.html">Rent Now →</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="/images/ca3.png" alt="BMW X5">
+              <h3>BMW X5</h3>
+              <ul class="features">
+                <li><i class="fas fa-user-friends"></i> 5 People</li>
+                <li><i class="fas fa-car-side"></i> Automatic</li>
+                <li><i class="fas fa-road"></i> 500km</li>
+                <li><i class="fas fa-gas-pump"></i> Gasoline</li>
+              </ul>
+              <div class="price">
+                <p>150$ <span>/per day</span></p>
+                <a href="/html/auth.html">Rent Now →</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="/images/car6.png" alt="Audi A4">
+              <h3>Audi A4</h3>
+              <ul class="features">
+                <li><i class="fas fa-user-friends"></i> 5 People</li>
+                <li><i class="fas fa-car-side"></i> Manual</li>
+                <li><i class="fas fa-road"></i> 450km</li>
+                <li><i class="fas fa-gas-pump"></i> Gasoline</li>
+              </ul>
+              <div class="price">
+                <p>130$ <span>/per day</span></p>
+                <a href="/html/auth.html">Rent Now →</a>
+              </div>
+            </div>
+            
+      
+  
+          </div>
+       </div>
+       <div class="houses">
+          <h1 class="Property-title">cars</h1>
+          <div class="card-container">
+        
+              <div class="card-container">
+                  <div class="card">
+                    <img src="/images/house1.jpg" alt="Villa House 1">
+                    <h3>Villa House</h3>
+                    <ul class="features">
+                      <li><i class="fas fa-bed"></i> 4 Bedrooms</li>
+                      <li><i class="fas fa-bath"></i> 2 Bathrooms</li>
+                      <li><i class="fas fa-ruler-combined"></i> 2500 sqft</li>
+                      <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                    </ul>
+                    <div class="price">
+                      <p>180$ <span>/per day</span></p>
+                      <a href="#">Rent Now →</a>
+                    </div>
+                  </div>
+                
+                  <div class="card">
+                    <img src="/images/house2.jpg" alt="Villa House 2">
+                    <h3>Modern Apartment</h3>
+                    <ul class="features">
+                      <li><i class="fas fa-bed"></i> 3 Bedrooms</li>
+                      <li><i class="fas fa-bath"></i> 1 Bathroom</li>
+                      <li><i class="fas fa-ruler-combined"></i> 1800 sqft</li>
+                      <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                    </ul>
+                    <div class="price">
+                      <p>140$ <span>/per day</span></p>
+                      <a href="#">Rent Now →</a>
+                    </div>
+                  </div>
+                
+                  <div class="card">
+                    <img src="/images/house3.jpg" alt="Villa House 3">
+                    <h3>Cozy Cottage</h3>
+                    <ul class="features">
+                      <li><i class="fas fa-bed"></i> 2 Bedrooms</li>
+                      <li><i class="fas fa-bath"></i> 1 Bathroom</li>
+                      <li><i class="fas fa-ruler-combined"></i> 1200 sqft</li>
+                      <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                    </ul>
+                    <div class="price">
+                      <p>100$ <span>/per day</span></p>
+                      <a href="#">Rent Now →</a>
+                    </div>
+                  </div>
+                </div>
+                
+      
+          </div>
+       </div>
+  
+    
+  
+       </section>
+       <section id="kireeye-testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-container">
+      
+          <div class="testimonial-box">
+            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="User 1">
+            <p><i class="fas fa-quote-left"></i> I rented a car for my wedding using Kireeye and it was smooth and secure. Highly recommended for all kinds of rentals! <br> <i class="fas fa-quote-right"></i></p>
+            <h3>Ahmed Ali</h3>
+            <span> Car Renter</span>
+          </div>
+      
+          <div class="testimonial-box">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User 2">
+            <p><i class="fas fa-quote-left"></i> Listing my house on Kireeye was simple, and I got a tenant within a week. Great platform for landlords! <br><i class="fas fa-quote-right"></i></p>
+            <h3>Faduma Salah</h3>
+            <span> House Owner</span>
+          </div>
+      
+          <div class="testimonial-box">
+            <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="User 3">
+            <p><i class="fas fa-quote-left"></i> Kireeye helped me find a short-term rental in another city while I was traveling for work. Very easy to use. <i class="fas fa-quote-right"></i></p>
+            <h3>Liban Said</h3>
+            <span> Business Traveler</span>
+          </div>
+      
+        </div>
+      </section>
     <footer>
         <div class="footer-container">
           <div class="footer-grid">
@@ -40,48 +220,47 @@
               <ul class="space-y-2">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
-                <li><a href="#">Press</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </div>
-  
-            <!-- Support Section -->
+
+          
             <div>
               <h3 class="text-lg">Support</h3>
               <ul class="space-y-2">
-                <li><a href="#">Help Center</a></li>
+ 
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Account</a></li>
               </ul>
             </div>
-  
-            <!-- Legal Section -->
+
             <div>
               <h3 class="text-lg">Legal</h3>
               <ul class="space-y-2">
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Cookie Preferences</a></li>
-                <li><a href="#">Corporate Information</a></li>
+               
               </ul>
             </div>
-  
-            <!-- Connect with Us Section -->
-       
+
+           
+            <div>
               <h3 class="text-lg">Connect with Us</h3>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+            
               </div>
+
             </div>
           </div>
-  
-          <!-- Footer Bottom Section -->
+
+        
           <div class="footer-bottom">
-            <p>&copy; 2023 MovieApp. All rights reserved.</p>
+            <p>&copy; 2025 kireeye. All rights reserved.</p>
           </div>
         </div>
       </footer>
