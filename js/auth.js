@@ -9,7 +9,7 @@ const authForm = document.querySelector("#authForm");
 
 let signIn = true;
 
-// Use event delegation so it works after innerHTML change
+
 document.addEventListener("click", (e) => {
   if (e.target && e.target.id === "switchForm") {
     switchAuthForm();
@@ -57,11 +57,10 @@ authForm.addEventListener("submit", (e) => {
     localStorage.setItem("users", JSON.stringify(users));
     alert("Registered successfully");
 
-    // Save email and password for auto-fill when switching to sign-in
     localStorage.setItem("lastUsedEmail", email.value);
     localStorage.setItem("lastUsedPassword", password.value);
 
-    switchAuthForm(); // Switch back to sign in
+    switchAuthForm();
   }
 });
 

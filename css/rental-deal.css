@@ -2,7 +2,11 @@
     background-color: #f4f7ff;
     padding: 20px 0 ;
 }
-
+#rental-deals h1{
+  text-align: center;
+  color: #6c63ff;
+  margin-block: 2rem;
+}
   
   .card-container {
     display: flex;

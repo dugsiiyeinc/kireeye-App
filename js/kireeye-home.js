@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   function displayListings(items, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    container.innerHTML = ''; 
+    container.innerHTML = '';
   
     items.forEach(item => {
       const itemDiv = document.createElement('div');
@@ -41,9 +41,30 @@ document.addEventListener("DOMContentLoaded", async () => {
         <p>Location: ${item.location}</p>
         <p>Price: $${item.price_per_month || item.price_per_day || item.price_per_event}</p>
         <p>${item.availability ? "Available" : "Not Available"}</p>
+        <button class="rent-btn" ${!item.availability ? 'disabled' : ''}>Rent Now→</button>
       `;
+  
+     
+      const rentButton = itemDiv.querySelector('.rent-btn');
+      rentButton.addEventListener('click', () => {
+        rentItem(item);
+      });
+  
       container.appendChild(itemDiv);
     });
+  }
+  
+
+  function rentItem(item) {
+    alert(`You have rented: ${item.title || item.name} located in ${item.location}.`);
+  
+    let rentals = JSON.parse(localStorage.getItem("rentedItems")) || [];
+  
+    const alreadyRented = rentals.some(r => r.id === item.id);
+    if (!alreadyRented) {
+      rentals.push(item);
+      localStorage.setItem("rentedItems", JSON.stringify(rentals));
+    }
   }
   
 
