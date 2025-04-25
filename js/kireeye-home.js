@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       const response = await fetch("../data/data.json");
       const data = await response.json();
   
-      // Display initial listings for popular items
+     
       displayListings(getRandomItems(data.houses, 3), 'popular-houses-list');
       displayListings(getRandomItems(data.cars, 3), 'popular-cars-list');
   
-      // Display all listings for houses and cars
+     
       displayListings(data.houses, 'houses-list');
       displayListings(data.cars, 'cars-list');
   
-      // Setup navigation and filters
+    
       setupCategoryNavigation();
       setupFilters();
     } catch (error) {
@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
   
-  // Function to get a random selection of items
+
   function getRandomItems(array, numItems) {
     if (array.length <= numItems) return array;
     let shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, numItems);
   }
   
-  // Function to display listings in the given container
+
   function displayListings(items, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    container.innerHTML = '';  // Clear previous listings
+    container.innerHTML = ''; 
   
     items.forEach(item => {
       const itemDiv = document.createElement('div');
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
   
-  // Function to setup the category navigation
+
   function setupCategoryNavigation() {
     const navLinks = document.querySelectorAll('nav ul li');
     navLinks.forEach(link => {
@@ -54,23 +54,23 @@ document.addEventListener("DOMContentLoaded", async () => {
         const category = link.getAttribute('data-category');
         showCategory(category);
   
-        // Highlight the active category
+      
         navLinks.forEach(l => l.classList.remove('active'));
         link.classList.add('active');
       });
     });
   }
   
-  // Function to display the selected category
+
   function showCategory(category) {
     const sections = document.querySelectorAll('.category');
-    sections.forEach(section => section.style.display = 'none');  // Hide all sections
+    sections.forEach(section => section.style.display = 'none'); 
   
     const target = document.getElementById(category);
-    if (target) target.style.display = 'block';  // Show the selected section
+    if (target) target.style.display = 'block'; 
   }
   
-  // Function to setup filters for houses and cars
+
   function setupFilters() {
     const houseType = document.getElementById("house-type-filter");
     const housePrice = document.getElementById("house-price-filter");
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
   
-  // Function to apply house filters
+
   async function applyHouseFilters() {
     try {
       const response = await fetch("../data/data.json");
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
   
-  // Function to apply car filters
+
   async function applyCarFilters() {
     try {
       const response = await fetch("../data/data.json");

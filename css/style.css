@@ -138,37 +138,7 @@ nav {
     margin-bottom: 2rem;
   }
   
-  .search-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .search-form input,
-  .search-form select,
-  .search-form button {
-    padding: 0.7rem 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-  }
-  
-  .search-form input,
-  .search-form select {
-    width: 250px;
-  }
-  
-  .search-form button {
-    background-color: blue;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-form button:hover {
-    background-color: rgb(12, 12, 53);
-  }
+
 
   @media (max-width: 768px) {
     .nav-btns {
@@ -240,8 +210,5 @@ nav {
     }
 
 
-    .search-form button{
-      width: 80%;
-      margin-top: 1rem;
-     }
+  
 }
