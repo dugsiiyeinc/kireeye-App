@@ -56,16 +56,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   
 
   function rentItem(item) {
-    alert(`You have rented: ${item.title || item.name} located in ${item.location}.`);
-  
     let rentals = JSON.parse(localStorage.getItem("rentedItems")) || [];
   
-    const alreadyRented = rentals.some(r => r.id === item.id);
+ 
+    const alreadyRented = rentals.some(r => (r.image === item.image)); 
+  
     if (!alreadyRented) {
       rentals.push(item);
       localStorage.setItem("rentedItems", JSON.stringify(rentals));
     }
+  
+    
+    window.location.href = "../html/mylist.html"; 
   }
+  
   
 
   function setupCategoryNavigation() {

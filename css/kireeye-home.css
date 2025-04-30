@@ -80,8 +80,21 @@ nav ul li.active {
 }
 
 
-
+.rent-btn{
+    background-color: blue;
+    color:white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
 .filtering{
     display: flex;
     justify-content: space-around;
+}
+.filtering select{
+    padding: 5px 10px;
+   border: 1px solid blue;
+   border-radius: 5px;
+   outline: none;
 }

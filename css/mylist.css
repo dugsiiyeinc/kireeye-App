@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+nav a,
+nav h4,
+nav button {
+  color: blue; 
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav button:hover {
+  color: #400ad4;
+}
+
+
+.container {
+  padding: 100px 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+  color: #333; 
+}
+
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+h1 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.listing {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: calc(33.333% - 30px);
+    text-align: center;
+    cursor: pointer;
+
+}
+.listing:hover{
+    background-color: rgb(179, 160, 160);
+}
+.listing img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #cc2936;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: red;
+}
+
+
