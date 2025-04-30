@@ -98,3 +98,41 @@ nav ul li.active {
    border-radius: 5px;
    outline: none;
 }
+
+@media (max-width: 1024px) {
+    .listing {
+      width: calc(50% - 30px);
+    }
+  
+    .filtering {
+      justify-content: center;
+    }
+  }
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .listing {
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 5px 10px;
+    }
+  
+    .category {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .filtering {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filtering select {
+      width: 100%;
+    }
+  }

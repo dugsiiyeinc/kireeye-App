@@ -104,3 +104,27 @@ h1 {
 }
 
 
+
+@media (max-width: 1024px) {
+  .listing {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+
+  .listing {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 80px 10px 30px;
+  }
+}
